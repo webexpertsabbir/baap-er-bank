@@ -9,10 +9,10 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     const password = passwordField.value;
     // console.log(password);
     // step 4
-    if(email === 'wpdevsabbir@gmail.com' && password === 'wpdevsabbir'){
-        console.log('valid user');
+    if(email === 'baaper@bank.com' && password === 'bank'){
+        window.location.href = 'bank.html'
     }
     else(
-        console.log('Invalid User')
+        alert('Invalid User, plz input valid user')
     )
 })
