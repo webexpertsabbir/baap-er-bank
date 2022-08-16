@@ -6,6 +6,12 @@ document.getElementById('diposit-button').addEventListener('click', function(){
     const depositField = document.getElementById('deposit-field');
     const newDepositField = depositField.value;
     const newDepositAmound = parseFloat(newDepositField);
+    depositField.value = '';
+    
+    if(isNaN(newDepositAmound)){
+        alert('Enter a valide amount');
+        return;
+    }
     // console.log( newDepositAmound)
     // step 3 get deposit total
     const depositTotal = document.getElementById('deposit-total');
